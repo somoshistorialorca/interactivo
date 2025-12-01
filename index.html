@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centenario IES Ibáñez Martín (1928-2028)</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>IES Ibáñez Martín</h1>
+        <p>1928 - 2028: Un Siglo de Historia Educativa</p>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <div class="timeline-container" id="timeline-container">
+        <div class="timeline-line"></div>
+        <!-- Items injected by JS -->
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <img id="modal-img" src="" alt="Header Image">
+                <div class="modal-title-overlay">
+                    <span id="modal-year" class="year-badge"></span>
+                    <h2 id="modal-title"></h2>
+                </div>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Injected content -->
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
